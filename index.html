@@ -1,0 +1,940 @@
+	<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="colorlib">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>Fleet Manager</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+		
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+			
+		<style>
+				body {
+				  color: #777777;
+				  font-family: "Poppins", sans-serif;
+				  font-size:14px;
+				}
+
+				a:hover{
+					text-decoration:none;
+				}
+
+				.mt-80 {
+				  margin-top: 80px;
+				}
+
+				@media (max-width: 767px) {
+				  .fullscreen {
+				    height: auto !important;
+				  }
+				}
+
+				h1, h2, h3,
+				h4, h5, h6 {
+				  font-family: "Poppins", sans-serif;
+				  color: #222222;
+				  line-height: 1.2em !important;
+				  margin-bottom: 0;
+				  margin-top: 0;
+				  font-weight: 600;
+				}
+
+				.overlay{
+					position: absolute;
+				    left: 0;
+				    right: 0;
+				    top: 0;
+				    bottom: 0;
+				}
+
+				.blog-home-banner .overlay-bg {
+				  background: rgba(0, 0, 0, 0.5);
+				}
+
+
+
+
+				/*-------- Start Banner Area ------------*/
+				.banner-area {
+				  background: url(img/header-bg.jpg) center;
+				  background-size: cover;
+				  position: relative;
+				}
+
+				.banner-area .overlay-bg {
+				  background-color: rgba(0, 0, 0, 0.8);
+				}
+
+				@media (max-width: 767px) {
+				  .fullscreen {
+				    height: auto !important;
+				  }
+				}
+
+				.banner-content {
+				  text-align: left;
+				}
+
+				.banner-content h1 {
+				  font-size: 60px;
+				  font-weight: 600;
+				  line-height: 1em;
+				  margin-top: 10px;
+				  color: #f9d700;
+				}
+
+				@media (max-width: 991.98px) {
+				  .banner-content h1 {
+				    font-size: 36px;
+				  }
+				}
+
+				@media (max-width: 991.98px) {
+				  .banner-content h1 br {
+				    display: none;
+				  }
+				}
+
+				@media (max-width: 1199.98px) {
+				  .banner-content h1 {
+				    font-size: 45px;
+				  }
+				}
+
+				@media (max-width: 480px) {
+				  .banner-content h1 {
+				    font-size: 32px;
+				  }
+				}
+
+				.banner-content h6 {
+				  font-size: 14px;
+				  font-weight: 400;
+				  text-transform: uppercase;
+				  letter-spacing: 2px;
+				}
+
+				@media (max-width: 1280px) {
+				  .banner-content br {
+				    display: none;
+				  }
+				}
+
+				.banner-content .primary-btn {
+				  background-color: #f9d700;
+				  color: #222;
+				  font-weight: 600;
+				  font-size: 14px;
+				}
+
+				.banner-content .primary-btn:hover {
+				  background-color: #fff;
+				  color: #222;
+				}
+
+				@media (max-width: 767px) {
+				  .banner-content {
+				    padding-top: 100px;
+				    padding-bottom: 50px;
+				  }
+				}
+
+				.header-right {
+				  background-color: #f9d700;
+				  border: 1px solid #4b5263;
+				  padding: 50px;
+				  text-align: center;
+				}
+
+				@media (max-width: 767px) {
+				  .header-right {
+				    margin-bottom: 50px;
+				  }
+				}
+
+				@media (max-width: 413px) {
+				  .header-right {
+				    padding: 20px;
+				  }
+				}
+
+				.header-right .default-select .nice-select {
+				  width: 100%;
+				  border-radius: .25rem;
+				  background-color: #000000;
+				}
+
+				.header-right .form-control {
+				  font-size: 14px;
+				  padding: 0.575rem 0.75rem;
+				  background-color: #000000;
+				  border: none;
+				}
+
+				.header-right .input-group-text {
+				  margin-right: 0;
+				  border-top-right-radius: .25rem !important;
+				  border-bottom-right-radius: .25rem !important;
+				  background: #fff;
+				  border-color: #fff;
+				}
+
+				.header-right .input-group-prepend span {
+				  color: #fff;
+				  background-color: #000000;
+				  border-color: #000000;
+				}
+
+				.header-right .txt-field {
+				  margin-bottom: 1rem;
+				}
+
+				.header-right .lnr {
+				  color: #222;
+				}
+
+				.header-right .dates {
+				  padding: 0.530rem 0.75rem;
+				  border: none;
+				}
+
+				@media (max-width: 767px) {
+				  .header-right .wrap-left {
+				    padding-right: 15px !important;
+				  }
+				  .header-right .wrap-right {
+				    padding-left: 15px !important;
+				  }
+				  .header-right .dates-wrap {
+				    margin-top: 1rem;
+				  }
+				}
+
+				.header-right .btn-lg {
+				  width: 100%;
+				  font-size: 14px;
+				  color: #fff;
+				  background-color: #000000;
+				}
+
+				@media (max-width: 480px) {
+				  .header-right {
+				    margin: 15px;
+				  }
+				}
+
+				.wrap-left {
+				  padding-right: 0.5rem !important;
+				}
+
+				.wrap-right {
+				  padding-left: 0.5rem !important;
+				}
+
+				.nice-select::after {
+				  border-bottom: 1px solid #999;
+				  border-right: 1px solid #999;
+				  content: '';
+				  display: block;
+				  height: 8px;
+				  margin-top: -6px;
+				  pointer-events: none;
+				  position: absolute;
+				  right: 12px;
+				  top: 50%;
+				  -webkit-transform-origin: 66% 66%;
+				  -ms-transform-origin: 66% 66%;
+				  transform-origin: 66% 66%;
+				  -webkit-transform: rotate(45deg);
+				  -ms-transform: rotate(45deg);
+				  transform: rotate(45deg);
+				  -webkit-transition: all 0.15s ease-in-out;
+				  transition: all 0.15s ease-in-out;
+				  width: 8px;
+				}
+
+				/*-------- End Banner Area ------------*/
+
+				/* Overlay */ 
+
+				.banner-area .overlay-bg {
+				  background-color: rgba(0, 0, 0, 0.8);
+				}
+
+				.overlay {
+				  position: absolute;
+				  left: 0;
+				  right: 0;
+				  top: 0;
+				  bottom: 0;
+				}
+
+				/*** Button ***/
+
+				/*-------- Start home-about Area -------------*/
+
+				.primary-btn {
+				  background: #f9d700;
+				  line-height: 42px;
+				  padding-left: 30px;
+				  padding-right: 30px;
+				  border: none;
+				  color: #fff;
+				  display: inline-block;
+				  font-weight: 600;
+				  position: relative;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				  cursor: pointer;
+				  position: relative;
+				}
+
+				.primary-btn:focus {
+				  outline: none;
+				}
+
+				.primary-btn span {
+				  color: #fff;
+				  position: absolute;
+				  top: 50%;
+				  transform: translateY(-60%);
+				  right: 30px;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.primary-btn:hover {
+				  color: #fff;
+				}
+
+				.primary-btn:hover span {
+				  color: #fff;
+				  right: 20px;
+				}
+
+
+				@media (max-width: 991px) {
+				  .home-about-area .about-left {
+				    text-align: center;
+				    margin-bottom: 30px;
+				  }
+				}
+
+				.home-about-area .about-right {
+				  padding: 75px;
+				}
+
+				@media (max-width: 1024px) {
+				  .home-about-area .about-right {
+				    padding: 15px;
+				  }
+				}
+
+				.home-about-area .about-right h4 {
+				  font-size: 18px;
+				  padding: 20px 0px;
+				  font-weight: 300;
+				}
+
+				.home-about-area .about-right p {
+				  margin-bottom: 20px;
+				}
+
+				.home-about-area .about-right .primary-btn {
+				  color: #222;
+				  border: 1px solid transparent;
+				}
+
+				.home-about-area .about-right .primary-btn:hover {
+				  background-color: transparent;
+				  border-color: #f9d700;
+				  color: #f9d700;
+				}
+
+				/*-------- End home-about Area -------------*/
+
+				/*-------- Start services Area -------------*/
+				.services-area .single-service {
+				  background-color: #f9f9ff;
+				  text-align: center;
+				  padding: 30px;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.services-area .single-service .lnr {
+				  color: #222;
+				  font-size: 30px;
+				  font-weight: 900;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.services-area .single-service h4 {
+				  margin-top: 30px;
+				  margin-bottom: 20px;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.services-area .single-service:hover {
+				  background-color: #000000;
+				  pointer: cursor;
+				}
+
+				.services-area .single-service:hover h4,
+				.services-area .single-service:hover .lnr {
+				  color: #f9d700;
+				}
+
+				.single-service:hover p{
+					color:white !important;
+					opacity:.5;
+				}
+
+				@media (max-width: 991px) {
+				  .services-area .single-service {
+				    margin-bottom: 30px;
+				  }
+				}
+
+				.section-title {
+				  text-align: center;
+				  display: block;
+				  margin-left: auto;
+				  margin-right: auto;
+				  margin-bottom: 80px;
+				}
+
+				.section-title h1 {
+				  margin-bottom: 10px;
+				}
+
+				.pb-120 {
+				  padding-bottom: 120px;
+				}
+
+				.section-gap {
+					padding: 120px 0;
+				}
+
+				/*-------- End services Area -------------*/
+
+				/*-------- start home-calltoaction Area -------------*/
+				.home-calltoaction-area {
+				  background: url(img/call-action-bg.jpg) center;
+				  background-size: cover;
+				  position: relative;
+				}
+
+				.home-calltoaction-area .overlay-bg {
+				  background-color: rgba(249, 215, 0, 0.9);
+				}
+
+				.home-calltoaction-area p {
+				  margin-bottom: 0px;
+				  margin-top: 20px;
+				  color: #222;
+				}
+
+				.home-calltoaction-area .btn-left {
+				  text-align: right;
+				}
+
+				@media (max-width: 991px) {
+				  .home-calltoaction-area .btn-left {
+				    text-align: left;
+				    margin-top: 30px;
+				  }
+				}
+
+				.home-calltoaction-area .primary-btn {
+				  text-transform: uppercase !important;
+				  background-color: #222;
+				}
+
+				.home-calltoaction-area .primary-btn:hover {
+				  background-color: #fff;
+				  color: #222;
+				}
+
+				/*-------- end home-calltoaction Area -------------*/
+
+				/*-------- start footer Area -------------*/
+				.footer-area {
+				  background-color: #000000;
+				  position: relative;
+				}
+
+				.footer-area h6 {
+				  color: #fff;
+				  margin-bottom: 25px;
+				  font-size: 18px;
+				  font-weight: 600;
+				}
+
+				.copy-right-text i,
+				.copy-right-text a {
+				  color: #f9d700;
+				}
+
+				.footer-social a {
+				  padding-right: 25px;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.footer-social a:hover i {
+				  color: #f9d700;
+				}
+
+				.footer-social i {
+				  color: #cccccc;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				@media (max-width: 991.98px) {
+				  .footer-social {
+				    text-align: left;
+				  }
+				}
+
+				.single-footer-widget input {
+				  border: none;
+				  width: 80% !important;
+				  font-weight: 300;
+				  background: #f9f9ff;
+				  color: #eee;
+				  padding-left: 20px;
+				  border-radius: 0;
+				  font-size: 14px;
+				  padding: 9.5px;
+				}
+
+				.single-footer-widget input:focus {
+				  background-color: #fff;
+				}
+
+				.single-footer-widget ul li {
+				  margin-bottom: 10px;
+				}
+
+				.single-footer-widget ul li a {
+				  color: #777777;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.single-footer-widget ul li a:hover {
+				  color: #f9d700;
+				}
+
+				.single-footer-widget .bb-btn {
+				  color: #f9d700;
+				  color: #fff;
+				  font-weight: 300;
+				  border-radius: 0;
+				  z-index: 9999;
+				  cursor: pointer;
+				}
+
+				.single-footer-widget .info {
+				  position: absolute;
+				  margin-top: 20%;
+				  color: #fff;
+				  font-size: 12px;
+				}
+
+				.single-footer-widget .info.valid {
+				  color: green;
+				}
+
+				.single-footer-widget .info.error {
+				  color: red;
+				}
+
+				.single-footer-widget .click-btn {
+				  background-color: #f9d700;
+				  color: #000;
+				  border-radius: 0;
+				  border-top-left-radius: 0px;
+				  border-bottom-left-radius: 0px;
+				  padding: 8px 12px;
+				  border: 0;
+				}
+
+				.single-footer-widget .click-btn span {
+				  font-weight: 500;
+				}
+
+				.single-footer-widget ::-moz-selection {
+				  /* Code for Firefox */
+				  background-color: #191919 !important;
+				  color: #777777;
+				}
+
+				.single-footer-widget ::selection {
+				  background-color: #191919 !important;
+				  color: #777777;
+				}
+
+				.single-footer-widget ::-webkit-input-placeholder {
+				  /* WebKit, Blink, Edge */
+				  color: #777777;
+				  font-weight: 300;
+				}
+
+				.single-footer-widget :-moz-placeholder {
+				  /* Mozilla Firefox 4 to 18 */
+				  color: #777777;
+				  opacity: 1;
+				  font-weight: 300;
+				}
+
+				.single-footer-widget ::-moz-placeholder {
+				  /* Mozilla Firefox 19+ */
+				  color: #777777;
+				  opacity: 1;
+				  font-weight: 300;
+				}
+
+				.single-footer-widget :-ms-input-placeholder {
+				  /* Internet Explorer 10-11 */
+				  color: #777777;
+				  font-weight: 300;
+				}
+
+				.single-footer-widget ::-ms-input-placeholder {
+				  /* Microsoft Edge */
+				  color: #777777;
+				  font-weight: 300;
+				}
+
+				@media (max-width: 991.98px) {
+				  .single-footer-widget {
+				    margin-bottom: 30px;
+				  }
+				}
+
+				@media (max-width: 800px) {
+				  .social-widget {
+				    margin-top: 30px;
+				  }
+				}
+
+				.footer-text {
+				  text-align: center;
+				  margin-bottom: 0px;
+				}
+
+				.footer-text a,
+				.footer-text i {
+				  color: #f9d700;
+				}
+
+				.footer-bottom {
+				  position: absolute;
+				  bottom: 0px;
+				  width: 100%;
+				}
+
+				/**** Gallery area **/ 
+
+				.image-gallery-area {
+				  background-color: #f9f9ff;
+				}
+
+				/*-------- Start latest-blog Area -------------*/
+				.single-latest-blog .thumb {
+				  overflow: hidden;
+				}
+
+				.single-latest-blog .thumb img {
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				  width: 100%;
+				}
+
+				.single-latest-blog .tags {
+				  margin: 20px 0px;
+				}
+
+				.single-latest-blog .tags li {
+				  display: inline-block;
+				  border: 1px solid #eee;
+				  padding: 4px 15px;
+				  font-size: 12px;
+				  font-weight: 400;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.single-latest-blog .tags li a {
+				  color: #222;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.single-latest-blog .tags li:hover {
+				  background-color: #f9d700;
+				  color: #222;
+				  border-color: transparent;
+				}
+
+				.single-latest-blog h4 {
+				  margin-bottom: 20px;
+				  -webkit-transition: all 0.3s ease 0s;
+				  -moz-transition: all 0.3s ease 0s;
+				  -o-transition: all 0.3s ease 0s;
+				  transition: all 0.3s ease 0s;
+				}
+
+				.single-latest-blog h4:hover {
+				  color: #f9d700;
+				}
+
+				.single-latest-blog .date {
+				  color: #222;
+				}
+
+				.single-latest-blog:hover .thumb img {
+				  -webkit-filter: brightness(50%);
+				  filter: brightness(50%);
+				  transform: scale(1.1);
+				}
+
+				@media (max-width: 991px) {
+				  .single-latest-blog {
+				    margin-bottom: 40px;
+				  }
+				}
+
+				/*-------- end latest-blog Area -------------*/
+
+				/*-------- end footer Area -------------*/ /** MAIN CSS **/
+
+		</style>
+			
+
+		</head>
+		<body>	
+			<!-- start banner Area -->
+			<section class="banner-area relative" id="home">
+				<div class="overlay overlay-bg"></div>	
+				<div class="container">
+					<div class="row fullscreen d-flex align-items-center justify-content-between">
+						<div class="banner-content col-lg-6 col-md-6 ">
+						<img src="img/Fleet-120px.png" alt="" title="" height="100" width="100"/>
+							<h5>&nbsp;</h5>
+							<h6 class="text-white ">Vehicle Management?? Yes Please!</h6>
+							<h1>
+								Fleet Manager 3.1			
+							</h1>&nbsp;
+							<p class="pt-10 pb-10 text-white">
+								Fleet manager is instinctive web app that provides cab management services for fleet based companies of all sizes to manage complex tasks related to transportation and Logistics & much more…
+							</p>
+							<a href="https://bit.ly/2H2dYjD" class="primary-btn text-uppercase" target="_blank">Discover More</a>
+						</div>							
+					</div>
+				</div>					
+			</section>
+			<!-- End banner Area -->	
+
+			<!-- Start features Area -->
+			<section class="home-about-area section-gap">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 about-left">
+							<img class="img-fluid" src="img/features.jpg" alt="">
+						</div>
+						<div class="col-lg-6 about-right">
+							<h1>Features Includes</h1>
+							<p><ul style="list-style-type:disc" class="pl-3"><li>Organized dashboard</li> 
+									<li>Material UI</li>
+									<li>Vehicle Booking & management</li>
+									<li>track customer activities</li>
+									<li>manage cash flow </li>
+									<li>Browser Notifications</li>
+									<li>Fare Settings</li>
+									<li>Google Palces API</li>					
+								</ul>
+							</p>
+							<a class="text-uppercase primary-btn" href="https://bit.ly/2ZdkisO" target="_blank">take closer look</a>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End Features Area -->
+			
+			<!-- Start services Area -->
+			<section class="services-area pb-120">
+				<div class="container">
+					<div class="row section-title">
+						<h1>What you can do with Fleet Manager?</h1>
+						<p>cab services - simplified! </p>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 single-service">
+							<span class="lnr lnr-car"></span>
+							<h4>Taxi Service</h4>
+							<p>
+								Tracking solutions for cabs ensures better management of operating costs and profits for the Taxi Provider Companies.
+							</p>
+						</div>
+						<div class="col-lg-4 single-service">
+							<span class="lnr lnr-briefcase"></span>
+							<h4>Company Pick-ups</h4>
+							<p>
+								By introducing personalized company shuttle, an organization can give a good amenity to their employees & it also improves the brand reputation.
+							</p>
+						</div>
+						<div class="col-lg-4 single-service">
+							<span class="lnr lnr-bus"></span>
+							<h4>Goods Transportation</h4>
+							<p>
+								In-house fleet management for the Goods Transport Companies can make them Shape & meet the current fleet Demands as per availability of vehicles and manpower.
+							</p>
+						</div>												
+					</div>	
+				</div>	
+			</section>
+			<!-- End services Area -->
+			
+							
+			<!-- Start home-calltoaction Area -->
+			<section class="home-calltoaction-area relative">
+				<div class="container">
+					<div class="overlay overlay-bg"></div>
+					<div class="row align-items-center section-gap">
+						<div class="col-lg-8">
+							<h1>Check out >><a href="https://bit.ly/2sfUbDh" target="_blank" style="color:#ffffff"> Demo </a></h1>
+							<p>
+								<strong>Login Credentials</b> </br> Email id: master@admin.com</br> Password: password </strong>
+							</p>
+						</div>
+						<div class="col-lg-4 btn-left">
+							<a href="https://bit.ly/2ZdkisO" class="primary-btn" target="_blank">Buy now</a>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End home-calltoaction Area -->
+			
+			
+			<!-- Start image-gallery Area -->
+			<section class="image-gallery-area section-gap">
+				<div class="container">
+					<div class="row section-title">
+						<h1>Clients Across the Globe...</h1>
+						<p>They are increasing all over the world... </p>
+					</div>					
+					<div class="col-lg-12">
+						<div class="single-latest-blog">
+							<div class="thumb">
+							<img class="img-fluid" src="img/Fleet-map.jpg" alt="">
+							</div>             
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End image-gallery Area -->
+			
+							
+			<!-- Start footer-calltoaction Area -->
+			<section class="home-calltoaction-area relative">
+				<div class="container">
+					<div class="overlay overlay-bg"></div>
+					<div class="row align-items-center section-gap">
+						<div class="col-lg-8">
+							<strong><h1>Manage your rides, On the Go!</h1>
+							<p>Get efficient access from your Mobile!
+								</br>Track where your cab is going with <a href="http://tiny.cc/0jla2y" target="_blank" style="color:#ffffff"><h5 >FleetManager App.</h5></a>
+								
+							</p>
+							</strong>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<!-- End footer-calltoaction Area -->			
+			<!-- start footer Area -->		
+			<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">	
+						<p class="mt-0 mx-auto footer-text col-lg-12">
+						To unsubscribe, <a href="{{unsubscribe_url}}">click here.</a>
+							</br>We respects the privacy of our customers.</br>
+						To view our privacy policy, please <a href="https://bit.ly/2FnBMMz" target="_blank">click here.</a>
+							</br><a href="https://bit.ly/2H2IOIQ" target="_blank">Hyvikk Solutions</a> 
+						Locate At
+							</br>309, Swara Parklane,Atabhai Chowk, Bhavnagar,Gujarat(IN).
+							</br>Email us on <a href="mailto:msupport@hyvikk.com">msupport@hyvikk.com
+						</p>
+						<p class="mt-80 mx-auto footer-text col-lg-12">
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.</a> Powered by <a href="https://hyvikk.com/">Hyvikk</a>
+							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						</p>											
+					</div>
+				</div>
+				<img class="footer-bottom" src="img/footer-bottom.png" alt="">
+			</footer>	
+			<!-- End footer Area -->	
+
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+			<script>
+				$(document).ready(function() {
+			    "use strict";
+
+			    var window_width = $(window).width(),
+			        window_height = window.innerHeight,
+			        header_height = $(".default-header").height(),
+			        header_height_static = $(".site-header.static").outerHeight(),
+			        fitscreen = window_height - header_height;
+
+			    $(".fullscreen").css("height", window_height)
+			    $(".fitscreen").css("height", fitscreen);
+			});
+			</script>	
+		</body>
+	</html>
